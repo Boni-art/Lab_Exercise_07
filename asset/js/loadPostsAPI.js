@@ -96,10 +96,10 @@ function loadDataNew() {
 `;
                 
             });
-            // setTimeout(() => {
-            //     spin.innerHTML = ``;
-            //     postDiv3.innerHTML = output;
-            // }, 2500);
+            setTimeout(() => {
+                spin.innerHTML = ``;
+                postDiv3.innerHTML = output;
+            }, 2500);
             
         })
         .catch(function(err) {
