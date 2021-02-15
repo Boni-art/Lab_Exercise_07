@@ -112,6 +112,7 @@ const search = document.getElementById("searchInput");
 search.addEventListener("keyup", searchUsers);
 
 function searchUsers() {
+    spin.innerHTML = `<div class="ui active inline loader" style="color: green;"></div>`;
     //open the request 
     fetch('https://jsonplaceholder.typicode.com/posts')
         .then(function(res) {
@@ -162,6 +163,7 @@ function searchUsers() {
         });
 
         timeout = setTimeout( () => {
+            spin.innerHTML = ``;
             output = `<div class="ui segment">
             <p></p>
             <div class="ui active dimmer">
