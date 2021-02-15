@@ -1,9 +1,12 @@
 // UI Vars 
 const postDiv3 = document.getElementById('thePosts');
+const spin = document.getElementById('spin');
 
 //Load Every thing ....
 document.addEventListener("DOMContentLoaded", () => {
     //load_fromPlaceHolder();
+    spin.innerHTML = `<div class="ui active inline loader" style="color: green;"></div>`;
+    startTime();
     loadDataNew();
 });
 
@@ -91,8 +94,13 @@ function loadDataNew() {
     </div>
 
 `;
+                
             });
-            postDiv3.innerHTML = output;
+            // setTimeout(() => {
+            //     spin.innerHTML = ``;
+            //     postDiv3.innerHTML = output;
+            // }, 2500);
+            
         })
         .catch(function(err) {
             console.log(err);

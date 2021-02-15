@@ -1,5 +1,4 @@
 // UI Variables 
-const timerDemo = document.getElementById("timerDemo");
 const timerDemo2 = document.getElementById("timerDemo2");
 
 //timer 
@@ -18,7 +17,6 @@ function startTime() {
     m = addZero(m);
     s = addZero(s);
     // Assign to the UI [p]
-    timerDemo.innerHTML = `${h} : ${m} : ${s} ${am_pm }`;
     timerDemo2.innerHTML = `${h} : ${m} : ${s} ${am_pm }`;
     setTimeout(startTime, 500);
 }
