@@ -5,20 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Async Demo Project</title>
-    <!-- Semantic CDN -->
 
+    <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
 </head>
 
-<body>
+<body id="body">
 
     <!-- Navigation  -->
     <div class="ui top attached tabular menu">
-        <a class="active item" href="index.html">
+        <a class="item" id="navl" href="./index.html">
           Home
         </a>
-        <a class="item" href="api.html">
+        <a class="item" id="navl" style="border: 0.1px solid #2b3636;" href="./api.html">
             API
+        </a>
+        <a class="item" id="navl" href="./analog.html">
+            Clock
         </a>
         <div class="right menu">
             <div class="item">
@@ -29,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class="ui bottom attached segment">
+    <div class="ui bottom attached segment" style="background-color: rgb(207, 207, 207); border-top: 3px solid white;">
         <p></p>
     </div>
 
@@ -45,8 +48,7 @@
             <p id="timerDemo2">TIme Will Load Here ...</p>
         </div>
 
-          <div id="spin">
-          </div>
+          
           
 
         <!-- All Blogs  -->
@@ -54,6 +56,8 @@
 
             <div class="ui green message">
                 <i class="star icon"></i> All Blogs From JSON placeholder API
+            </div>
+            <div id="spin">
             </div>
             <div class="ui divided items" id="thePosts">
                 <!-- Content here  -->
